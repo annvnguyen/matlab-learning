@@ -72,7 +72,7 @@ i
 \end{bmatrix}
 \begin{bmatrix}
 \dot{\theta} \\
-\i
+i
 \end{bmatrix} +
 \begin{bmatrix}
 0 \\
