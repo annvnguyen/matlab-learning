@@ -13,3 +13,40 @@ This project develops a mathematical model of a brushed DC motor and designs clo
 
 **System Modeling**
 
+*Mechanical equation*
+$$T - b\dot{\theta} = J\ddot{\theta}$$
+
+*Electrical equation*
+$$L\frac{di}{dt} + Ri = V - V_{emf}$$
+
+Assuming that motor torque is proportional to the armature current by constant K_t 
+
+$$T = K_ti$$
+
+The back emf, V_{emf}, is proportional to the angular velocity by constant K_e
+
+$$V_{emf} = K_e\dot{\theta}$$
+
+In SI units, $$K_t = K_e$$, represented as K. 
+
+This yields two equations.
+
+$$Ki - b\dot{\theta} = J\ddot{\theta}$$
+
+$$V - Ri - L\frac{di}{dt} - k\dot{\theta} = 0$$
+
+**Transfer Function**
+
+By applying the Laplace transform, we express these equations in terms of the Laplace variable s. 
+
+$$KI(s) - bs\theta(s) = Js^2\theta(s)$$
+
+$$V(s) - RI(s) - LsI(s) - Ks\theta(s) = 0$$
+
+We can rewrite these into one transfer function by using the common $$I(s)$$ variable, and it is expressed as the rotational output over the voltage input. 
+
+$$ I(s) = \frac{s\theta(s)(Js+b)}{K} $$
+
+$$ (Ls+R)I(s) = V(s)-Ks\theta(s) $$
+
+$$\frac{\dot{\theta}(s)}{V(s)} = \frac{K}{(Js+b)(Ls+R) + K^2} $$
