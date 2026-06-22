@@ -6,7 +6,7 @@ This repository is an introduction to MATLAB and Simulink modeling and simulatio
 
 **Cruise Control**
 
-**DC Motor**
+**DC Motor Control**
 
 # Resources
 University of Michigan Control Tutorials for MATLAB and Simulink
