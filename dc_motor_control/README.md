@@ -50,3 +50,32 @@ $$ I(s) = \frac{s\theta(s)(Js+b)}{K} $$
 $$ (Ls+R)I(s) = V(s)-Ks\theta(s) $$
 
 $$\frac{\dot{\theta}(s)}{V(s)} = \frac{K}{(Js+b)(Ls+R) + K^2} $$
+
+**State-space model**
+
+We choose our state variables to be the rotational speed and electric current, $$\dot{\theta}$$ and $$i$$.
+
+$$\ddot{\theta} = \frac{K}{J}i - \frac{b}{J}\dot{\theta}$$
+
+$$\frac{di}{dt} = \frac{V}{L} - \frac{R}{L}i - \frac{K}{L}\dot{\theta}$$
+
+```math
+\frac{d}{dt}
+\begin{bmatrix}
+\dot{\theta} \\
+i
+\end{bmatrix}
+=
+\begin{bmatrix}
+\frac{-b}{J} & \frac{K}{J} \\
+\frac{-K}{L} & \frac{-R}{L}
+\end{bmatrix}
+\begin{bmatrix}
+\dot{\theta} \\
+\i
+\end{bmatrix} +
+\begin{bmatrix}
+0 \\
+\frac{1}{L}
+\end{bmatrix} V
+```
