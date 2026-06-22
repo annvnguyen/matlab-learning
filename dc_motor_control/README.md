@@ -87,3 +87,5 @@ y = [1
 \dot{\theta} \\
 i
 \end{bmatrix}$$
+
+**Controller Design**
