@@ -79,3 +79,11 @@ i
 \frac{1}{L}
 \end{bmatrix} V
 ```
+
+$$ 
+y = [1
+0]
+\begin{bmatrix}
+\dot{\theta} \\
+i
+\end{bmatrix}$$
