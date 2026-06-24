@@ -95,24 +95,34 @@ The closed-loop speed control is designed using proportional (P), proportional-i
 
 **Simulink Model**
 
-![Simulink Closed-loop Model](docs/simulink_model.png)
+<p align="center">
+  <img src="docs/simulink_model.png" alt="Simulink Closed-loop Model" width="700"/>
+</p>
 
 **Results**
 
 P Controller shows improved steady-state speed but shows overshoot error and steady-state error. 
 
-![Simulink P Control](docs/sim_p.png)
+<p align="center">
+  <img src="docs/sim_p.png" alt="Simulink P Control" width="400"/>
+</p>
 
 PI Controller reduces steady-state error but overshoot remains.
 
-![Simulink PI Control](docs/sim_pi.png)
+<p align="center">
+  <img src="docs/sim_pi.png" alt="Simulink PI Control" width="400"/>
+</p>
 
 PID Controller results in the fastest settling time and eliminates both overshoot and steady-state errors. 
 
-![Simulink PID Control](docs/sim_pid.png)
+<p align="center">
+  <img src="docs/sim_pid.png" alt="Simulink PID Control" width="400"/>
+</p>
 
 Disturbance Rejection
 
 A step load torque disturbance was applied during operation, and the PID controller shows the fastest recovery and the least speed deviation.
 
-![PID Controller Result](docs/load_rejection.png)
+<p align="center">
+  <img src="docs/load_rejection.png" alt="Disturbance Rejection with PID Controller" width="400"/>
+</p>
