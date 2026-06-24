@@ -91,8 +91,28 @@ i
 
 **Controller Design**
 
+The closed-loop speed control is designed using proportional (P), proportional-integral (PI), and proportional-integral-derivative (PID) controllers. 
+
 **Simulink Model**
 
-The closed-loop system consists of:
+![Simulink Closed-loop Model](docs/simulink_model.png)
 
+**Results**
 
+P Controller shows improved steady-state speed but shows overshoot error and steady-state error. 
+
+![Simulink P Control](docs/sim_p.png)
+
+PI Controller reduces steady-state error but overshoot remains.
+
+![Simulink PI Control](docs/sim_pi.png)
+
+PID Controller results in the fastest settling time and eliminates both overshoot and steady-state errors. 
+
+![Simulink PID Control](docs/sim_pid.png)
+
+Disturbance Rejection
+
+A step load torque disturbance was applied during operation, and the PID controller shows the fastest recovery and the least speed deviation.
+
+![PID Controller Result](docs/load_rejection.png)
