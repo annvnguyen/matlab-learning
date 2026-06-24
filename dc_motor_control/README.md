@@ -10,6 +10,7 @@ This project develops a mathematical model of a brushed DC motor and designs clo
 - Analyze open-loop motor behavior
 - Design and tune P, PI, PID controllers
 - Build a Simulink model of the complete closed-loop system
+- Investigate disturbance rejection under different load torques
 
 **System Modeling**
 
@@ -89,3 +90,9 @@ i
 \end{bmatrix}$$
 
 **Controller Design**
+
+**Simulink Model**
+
+The closed-loop system consists of:
+
+
